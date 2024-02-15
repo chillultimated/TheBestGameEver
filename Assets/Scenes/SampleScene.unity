@@ -594,7 +594,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CameraAxisTransform: {fileID: 675723559}
-  RotationSpeed: 1100
+  RotationSpeed: 1000
 --- !u!1001 &1026948935
 PrefabInstance:
   m_ObjectHideFlags: 0
