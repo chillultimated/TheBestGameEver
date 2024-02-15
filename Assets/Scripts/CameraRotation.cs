@@ -14,6 +14,6 @@ public class CameraRotation : MonoBehaviour
     void Update()
     {
         transform.localEulerAngles = new Vector3(0, transform.localEulerAngles.y + Time.deltaTime * RotationSpeed * Input.GetAxis("Mouse X"), 0);
-        CameraAxisTransform.localEulerAngles = new Vector3(CameraAxisTransform.localEulerAngles.x + Time.deltaTime * RotationSpeed * Input.GetAxis("Mouse Y"), 0, 0);
+        CameraAxisTransform.localEulerAngles = new Vector3(CameraAxisTransform.localEulerAngles.x - Time.deltaTime * RotationSpeed * Input.GetAxis("Mouse Y"), 0, 0);
     }
 }
