@@ -542,7 +542,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.553, z: -1.6}
+  m_LocalPosition: {x: 0, y: 1.388, z: -2.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 675723559}
@@ -596,7 +596,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CameraAxisTransform: {fileID: 675723559}
   minAngle: -21
-  maxAngle: 18
+  maxAngle: 25
   RotationSpeed: 500
 --- !u!95 &972465553
 Animator:
