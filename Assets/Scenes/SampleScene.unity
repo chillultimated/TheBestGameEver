@@ -541,13 +541,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.112436466, y: -0, z: -0, w: 0.9936589}
-  m_LocalPosition: {x: 0, y: 2.04, z: -2.41}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.553, z: -1.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 675723559}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 12.912001, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &972465550
 GameObject:
   m_ObjectHideFlags: 0
@@ -558,6 +558,7 @@ GameObject:
   m_Component:
   - component: {fileID: 972465551}
   - component: {fileID: 972465552}
+  - component: {fileID: 972465553}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -594,7 +595,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CameraAxisTransform: {fileID: 675723559}
-  RotationSpeed: 1000
+  minAngle: -21
+  maxAngle: 18
+  RotationSpeed: 500
+--- !u!95 &972465553
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 972465550}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6b291e18ec89ac24783c976c29613330, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1026948935
 PrefabInstance:
   m_ObjectHideFlags: 0
