@@ -57,5 +57,12 @@ public class PlayerController : MonoBehaviour
         //Fall and Jump
         _fallVelocity += gravity * Time.fixedDeltaTime;
         _characterController.Move(Vector3.down * _fallVelocity * Time.fixedDeltaTime);
+
+        //Stop Falling if on the ground
+        if (_characterController.isGrounded)
+        {
+            _fallVelocity = 0;
+        }
+
     }
 }
