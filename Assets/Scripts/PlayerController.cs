@@ -14,9 +14,9 @@ public class PlayerController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        _fallVelocity += gravity * Time.deltaTime;
-        GetComponent<CharacterController>().Move(Vector3.down * _fallVelocity * Time.deltaTime);
+        _fallVelocity += gravity * Time.fixedDeltaTime;
+        GetComponent<CharacterController>().Move(Vector3.down * _fallVelocity * Time.fixedDeltaTime);
     }
 }
