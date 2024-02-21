@@ -16,7 +16,14 @@ public class PlayerController : MonoBehaviour
         _characterController = GetComponent<CharacterController>();
     }
 
-    // Update is called once per frame
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Debug.Log("JUMP");
+        }
+    }
+
     void FixedUpdate()
     {
         _fallVelocity += gravity * Time.fixedDeltaTime;
